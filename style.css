@@ -3,19 +3,19 @@
   font-family: 'Bauhaus Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('Bauhaus Regular'), url('../assets/bauhaus-webfont/BauhausRegular.woff') format('woff');
+  src: local('Bauhaus Regular'), url('assets/bauhaus-webfont/BauhausRegular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Bauhaus Bold';
   font-style: normal;
   font-weight: bold;
-  src: local('Bauhaus Bold'), url('../assets/bauhaus-webfont/BauhausBold.woff') format('woff');
+  src: local('Bauhaus Bold'), url('assets/bauhaus-webfont/BauhausBold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Benton Sans';
-  src: url('../assets/bentonsansregular/BentonSansRegular.otf') format('otf');
+  src: url('assets/bentonsansregular/BentonSansRegular.otf') format('otf');
   font-weight: normal;
   font-style: normal;
 }
