@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Online Career Progression</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slicknav.css">
+</head>
+<body>
+    <div class="page-container">
+
+        <!-- Mobile Menu -->
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a class="active" href="courses.html">Courses</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="register.html">Register</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav class="navbar">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <a href="index.html">
+                    <img src="../assets/OCP_logo1.jpg" alt="OCP Logo" class="nav-logo">
+                    </a>
+                    <span class="company-name">Online Career Progression</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="courses.html">Courses</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="courses-content">
+            <div class="content-container">
+                <h2>Our Training Programs</h2>
+                <p>Our training program catalogue features a wide range of online courses focused on developing transferable skills. Below is a list of popular offerings along with their descriptions:</p>
+                
+                <div class="search-container">
+                    <input type="text" id="courseSearch" placeholder="Search for courses...">
+                </div>
+
+                <table class="courses-table">
+                    <thead>
+                        <tr>
+                            <th>Course Name</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="courseTableBody">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Online Career Progression. All rights reserved.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/courses.js"></script>
+</body>
+</html>
