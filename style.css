@@ -149,7 +149,6 @@
 
 .menu-wrap .menu > div {
   background: var(--yale-blue);
-  border-radius: 50%;
   width: 200vw;
   height: 200vw;
   display: flex;
