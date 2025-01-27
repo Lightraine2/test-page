@@ -3,19 +3,19 @@
   font-family: 'Bauhaus Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('Bauhaus Regular'), url('assets/bauhaus-webfont/BauhausRegular.woff') format('woff');
+  src: local('Bauhaus Regular'), url('../assets/bauhaus-webfont/BauhausRegular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Bauhaus Bold';
   font-style: normal;
   font-weight: bold;
-  src: local('Bauhaus Bold'), url('assets/bauhaus-webfont/BauhausBold.woff') format('woff');
+  src: local('Bauhaus Bold'), url('../assets/bauhaus-webfont/BauhausBold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Benton Sans';
-  src: url('assets/bentonsansregular/BentonSansRegular.otf') format('otf');
+  src: url('../assets/bentonsansregular/BentonSansRegular.otf') format('otf');
   font-weight: normal;
   font-style: normal;
 }
@@ -49,29 +49,31 @@
   display: none;
 }
 
-.menu-wrap .toggler {
-  position: absolute;
-  top: 5px;
-  left: 10px;
-  z-index: 1002;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  opacity: 0;
-}
-
 .menu-wrap .hamburger {
-  position: absolute;
-  top: 5px;
+  position: fixed; /* Change from absolute to fixed */
+  top: 10px;
   left: 10px;
-  z-index: 1001;
-  width: 50px;
-  height: 50px;
+  z-index: 1003; /* Increase z-index to stay on top */
+  width: 25px;
+  height: 25px;
   padding: 1rem;
   background: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 4px; /* Optional: adds a slight rounded corner */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: adds subtle shadow */
+}
+
+.menu-wrap .toggler {
+  position: fixed; /* Change from absolute to fixed */
+  top: 10px;
+  left: 10px;
+  z-index: 1004; /* Must be higher than hamburger */
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .menu-wrap .hamburger > div {
@@ -142,6 +144,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1002;
 }
 
 .menu-wrap .menu > div {
