@@ -50,10 +50,10 @@
 }
 
 .menu-wrap .hamburger {
-  position: fixed; /* Change from absolute to fixed */
+  position: fixed; 
   top: 10px;
   left: 10px;
-  z-index: 1003; /* Increase z-index to stay on top */
+  z-index: 1003; 
   width: 25px;
   height: 25px;
   padding: 1rem;
@@ -61,15 +61,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 4px; /* Optional: adds a slight rounded corner */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: adds subtle shadow */
+  border-radius: 4px; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .menu-wrap .toggler {
-  position: fixed; /* Change from absolute to fixed */
+  position: fixed; 
   top: 10px;
   left: 10px;
-  z-index: 1004; /* Must be higher than hamburger */
+  z-index: 1004; 
   width: 50px;
   height: 50px;
   opacity: 0;
@@ -317,7 +317,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top: 72px; /* Add padding-top equal to navbar height */
+  padding-top: 72px;
 }
 
 .hero-overlay h1 {
@@ -478,7 +478,7 @@ body {
 
 /* About Page Styles */
 .about-content {
-  padding: 8rem 0 4rem 0; /* Increased top padding to account for navbar */
+  padding: 8rem 0 4rem 0; 
   background-color: var(--white);
 }
 
@@ -533,7 +533,7 @@ body {
 
 /* Courses Page Styles */
 .courses-content {
-  padding: 8rem 0 4rem 0; /* Matches about-content padding */
+  padding: 8rem 0 4rem 0; 
   background-color: var(--white);
 }
 
